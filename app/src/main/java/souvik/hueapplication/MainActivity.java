@@ -51,16 +51,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         usernameButton = (Button) findViewById(R.id.username_button);
         usernameButton.setOnClickListener(this);
 
-        getButton.setOnClickListener(this);
-        putButton.setOnClickListener(this);
-        postButton.setOnClickListener(this);
-        deleteButton.setOnClickListener(this);
-
         PHLog.setSdkLogLevel(PHLog.LogLevel.DEBUG);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        getButton.setOnClickListener(this);
+        putButton.setOnClickListener(this);
+        postButton.setOnClickListener(this);
+        deleteButton.setOnClickListener(this);
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
