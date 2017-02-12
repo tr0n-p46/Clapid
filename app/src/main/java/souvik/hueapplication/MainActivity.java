@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         resourceText.setEnabled(false);
         resourceText.setEnabled(true);
-        PHHttpConnection.RequestMethod method = null;
+        PHHttpConnection.RequestMethod method;
 
         switch (view.getId()) {
             case R.id.get_button:
